@@ -1,2 +1,4 @@
 # magimirror
-Magic Mirror Website :)
+# Magic Mirror Website :)
+by Ava Chong
+
