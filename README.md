@@ -1,0 +1,2 @@
+# magimirror
+Magic Mirror Website :)
