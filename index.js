@@ -41,8 +41,8 @@ function getWeather() {
         const res = await fetch(url);
         const data = await res.json();
         document.getElementById('weather').innerHTML = `
-          <p>${data.current.temp_f}°F</p>
-          <p>${data.current.condition.text}</p>
+          <p>⋆｡˚ ☁︎  ${data.current.temp_f}°F</p>
+          <p>${data.current.condition.text}˚｡⋆</p>
         `;
       } catch (err) {
         document.getElementById('weather').textContent = 'Weather unavailable';
