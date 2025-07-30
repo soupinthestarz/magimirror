@@ -1,0 +1,99 @@
+:root{
+  --darkPink: #CD5B58;
+  --medPink: #E87B7B;
+  --lightPink: #FEEFEF;
+  --pink: #FFCECE;
+  --darkOrange: #bb713f;
+  --medOrange: #e2905a;
+  background: #ffebc6;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: Paaxel;
+  color: white;
+
+}
+
+
+
+video#cam{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 680px;
+  transform: translate(-50%, -50%);
+  border: 8px solid var(--medOrange);
+  border-radius: 12px;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.video-wrapper {
+  top: 40px;
+  position: relative;
+  width: 500px;
+  height: 680px;   
+  margin: 0 auto;
+  border: 8px solid var(--medOrange);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.time {
+  font-size: 4em;
+  text-align: center;
+  margin-top: 30px;
+  opacity: 0.85;
+}
+
+.date { 
+  font-size: 2em;
+  text-align: center;
+  opacity: 0.85;
+  top: 40px;
+}
+
+.weather {
+  position: absolute;
+  font-size: 1.5em;
+  text-align: right;
+  right: 5%;
+  width: 40%;
+  top: 250px;
+  opacity: 0.85;
+}
+
+.lyrics {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  font-size: 1.5em;
+  transform: translateX(-50%);
+  width: 90%; /*wrap long lines */
+  text-align: center;
+  opacity: 0.8;
+}
+
+
+#next-lyric-bttn{
+  display: block;
+  margin: 10px auto 0;
+  padding: 8px 16px;
+  font-size: 1em;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--medOrange);
+  color: rgb(255, 241, 220);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#next-lyric-bttn:hover {
+  background-color: var(--darkOrange);
+}
